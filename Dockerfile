@@ -11,4 +11,4 @@ COPY src ./src
 RUN cargo build --release
 
 # Set the default command to run the log generator with the desired arguments
-CMD ["cargo", "run", "--release", "--", "-n", "1000", "-o", "/var/log/a_custom.log"]
+CMD ["./target/release/log-generator"]
