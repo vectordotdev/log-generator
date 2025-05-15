@@ -1,9 +1,5 @@
 name: Build and Push Docker Image
 
-permissions:
-  contents: write
-  packages: write
-
 on:
   push:
     branches:
